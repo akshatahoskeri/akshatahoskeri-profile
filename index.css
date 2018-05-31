@@ -1,0 +1,137 @@
+.root{
+	font-size: 16px;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+}
+
+.banner{	
+	background-color: #7575a3;
+	color: white;
+	text-align: center;
+	font-size: 1rem;
+}
+
+.my-image{
+	width: 100%;
+}
+
+.paragraph{
+	background-color: #cce6ff;
+	color: black;
+    font-family: 'Handlee', cursive;;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.5vmax;
+    padding: 0.5vmax; 
+}
+
+.paragraph.one{
+	font-weight: bold;
+}
+
+.hobbies{
+	display: flex;
+	flex-direction: row;
+}
+
+.hobbies-list{
+	width: 45%;	
+	transition: padding 0.3s linear 0.1s;
+}
+
+.hobbyItem:hover {
+	font-weight: bolder;
+	padding: 0.5vmax;
+	color: tomato;
+}
+
+.hobbies-images{
+	width:55%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+}
+.sketch{
+	width:10vmax;
+	height: 10vmax;
+	border-radius: 0.6vmax;
+	transition: padding 0.3s linear 0.1s;
+}
+
+.sketch:hover{
+	padding:0.5vmax;
+}
+
+.paragraph.four{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 99%;
+	height:40%;
+	margin-bottom: 0.5vmax;
+    padding: 0.5vmax; 
+}
+
+.TechImage{
+	width: 47vmax;
+	height: 45vmin;
+	padding: 0.9vmax;
+}
+
+.Experiences{
+   font-size: 1.1rem;
+    display: flex;
+    flex-direction: row;
+    width: 99%;
+	height:40%;
+	margin-bottom: 0.5vmax;
+    padding: 0.5vmax; 
+    align-content: space-between;
+}
+
+.Experience{
+	background-color: #80d4ff;
+	border-radius: 0.6vmax;
+	padding: 0.5vmax;
+	margin: 0.2vmax;
+}
+
+.item{
+	display:inline-block;
+	background-color: pink;
+	flex-direction: row;
+	margin: 0.2vmax;
+}
+
+.footer{
+	display:block;
+	background-color: #7575a3;
+	color: white;
+	text-align: center;
+	font-size: 1rem;
+}
+
+@media only screen and (max-width: 768px){
+	.hobbies{
+		flex-direction: column;
+	}
+	.hobbies-list{
+		width:98%;
+	}
+	.hobbies-images{
+		width:98%;
+	}
+
+	.paragraph.four{
+		flex-direction: column;
+	}
+	.TechImage{
+		width:98%;
+	}
+	.Experiences{
+		flex-direction: column;
+	}
+}
